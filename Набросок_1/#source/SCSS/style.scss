@@ -1,0 +1,72 @@
+//Файле обнуляющих стилей
+@import 'zerostyle.scss';
+//Gppgle fonts
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+Buhid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+body{
+	background-image: url('../img/горы.jpg');
+	background-repeat: no-repeat;
+	.Top-menu{
+		width: 1920px;
+		position: fixed;
+		left: 0;
+		top: 0;
+		&::before{
+			content: '';
+			height: 75px;
+			width: 100%;
+			display: block;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+		.Top-menu__logo{
+			text-transform: uppercase;
+			font-size: 40px;
+			color: #40a184;
+			font-family: 'Dancing Script', cursive;
+			position: absolute;
+			left: 20px;
+			top: 15px;
+		}
+		.Top-menu-list{
+			height: 75px;
+			.Top-menu__items{
+				text-decoration: none;
+				float: left;
+				transition: 0.5s ease-in-out;
+				&:hover{
+					background-color: #d6d6d6;
+					& a:hover{
+						color: #327e67;
+						transition: 0.5s ease-in-out;
+						font-size: 20px;
+					}
+				}
+				&:nth-child(1){
+					margin: 0 0 0 200px;
+				}
+				& a{
+					color: #40a184;
+					text-transform: uppercase;
+					height: 75px;
+					width: 344px;
+					display: block;
+					line-height: 75px;
+					font-size: 18px;
+					padding: 0 10%;
+					text-align: center;
+					font-family: 'Salsa', cursive;
+					letter-spacing: 2px;
+					& a:hover{
+						color: #000;
+					}
+				}
+			}
+		}
+	}
+}
+

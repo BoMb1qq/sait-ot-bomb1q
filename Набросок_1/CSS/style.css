@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+Buhid&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background-image: url("../img/горы.jpg");
+  background-repeat: no-repeat;
+}
+body .Top-menu {
+  width: 1920px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+body .Top-menu::before {
+  content: "";
+  height: 75px;
+  width: 100%;
+  display: block;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+body .Top-menu .Top-menu__logo {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #40a184;
+  font-family: "Dancing Script", cursive;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+body .Top-menu .Top-menu-list {
+  height: 75px;
+}
+body .Top-menu .Top-menu-list .Top-menu__items {
+  text-decoration: none;
+  float: left;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+body .Top-menu .Top-menu-list .Top-menu__items:hover {
+  background-color: #d6d6d6;
+}
+body .Top-menu .Top-menu-list .Top-menu__items:hover a:hover {
+  color: #327e67;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 20px;
+}
+body .Top-menu .Top-menu-list .Top-menu__items:nth-child(1) {
+  margin: 0 0 0 200px;
+}
+body .Top-menu .Top-menu-list .Top-menu__items a {
+  color: #40a184;
+  text-transform: uppercase;
+  height: 75px;
+  width: 344px;
+  display: block;
+  line-height: 75px;
+  font-size: 18px;
+  padding: 0 10%;
+  text-align: center;
+  font-family: "Salsa", cursive;
+  letter-spacing: 2px;
+}
+body .Top-menu .Top-menu-list .Top-menu__items a a:hover {
+  color: #000;
+}
